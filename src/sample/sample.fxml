@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+
+<GridPane alignment="center" gridLinesVisible="true" hgap="10" prefHeight="380.0" prefWidth="347.0" vgap="10" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.111" fx:controller="sample.Controller">
+   <columnConstraints>
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" />
+      <RowConstraints minHeight="10.0" prefHeight="60.0" />
+   </rowConstraints>
+   <children>
+      <Button fx:id="buscaBtn" mnemonicParsing="false" onAction="#buscarAspirante" text="Buscar" />
+      <TextField fx:id="claveBuscar" promptText="aspirante_cl" GridPane.rowIndex="1" />
+      <TextArea fx:id="resultadoTexto" prefHeight="84.0" prefWidth="200.0" promptText="Resultado" GridPane.rowIndex="3" />
+   </children>
+</GridPane>
